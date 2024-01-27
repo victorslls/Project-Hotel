@@ -24,11 +24,11 @@ module.exports = {
       black: '#273029',
       soft_green:{
         DEFAULT: '#85c7dc',
-        secondaty: '#f3f9fb'
+        secondary: '#f3f9fb'
       },
       grey:{
         DEFAULT: '#88',
-        secondaty: '#f8f8f8'
+        secondary: '#f8f8f8'
       },
       orange: "#f2994a",
       outline: "#f1f1f1",
