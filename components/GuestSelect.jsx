@@ -13,7 +13,7 @@ const GuestSelect = () => {
   return (
     <Select>
       <SelectTrigger  className="w-full" >
-        <SelectValue placeholder="How many guests" />
+        <SelectValue placeholder="Quantos convidados?" />
       </SelectTrigger>
       <SelectContent>
         <SelectGroup>

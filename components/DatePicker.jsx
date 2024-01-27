@@ -21,7 +21,7 @@ const DatePicker = () => {
             !date && "text-black"
           )}
         >
-          {date ? format(date, "d MMM") : <span>Pick a date</span>}
+          {date ? format(date, "d MMM") : <span>Escolha uma data</span>}
           <CalendarIcon className="mr-2 h-5 w-5 text-black" />
         </Button>
       </PopoverTrigger>
