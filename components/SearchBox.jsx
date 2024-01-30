@@ -17,8 +17,7 @@ import GuestSelect from "./GuestSelect";
 const SearchBox = () => {
   return (
     <motion.div
-      variants={fadeIn("up", 0.2)}
-      transition={{ duration: 1 }}
+      variants={fadeIn("up", 0.5)} 
       initial="hidden"
       whileInView={"show"}
       viewport={{ once: false, amount: 0 }}

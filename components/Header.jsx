@@ -10,7 +10,7 @@ import Nav from "./Nav"
 
 const Header = () => {
     return (
-      <header className="absolute w-full max-w-[1200px] py-8 xl:py-10">
+      <header className="absolute w-full max-w-[1440px] py-8 xl:py-10">
         <div className="container mx-auto">
           {/**logo, nav (desktop), btn */}
           <div className="flex items-center justify-between">
@@ -25,11 +25,10 @@ const Header = () => {
               <div className="flex items-center gap-x-12">
                 <Nav
                   containerStyles="flex items-center justify-between"
-                  listStyles="flex gap-x-12 text-white"
+                  listStyles="flex  gap-x-12 text-black"
                 />
-                <Button variant="outline" className="px-10 h-[58px]">
-                  
-                  Login
+                <Button variant="outline" className="px-10 h-[48px]">
+                    Login
                 </Button>
               </div>
             </div>

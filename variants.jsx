@@ -1,12 +1,12 @@
-import { delay } from "framer-motion";
+
 
 export const fadeIn = (direction, delay) => {
     return {
         hidden: {
-            y:direction === 'up' ? 80 : direction === 'down'? -80: 0,
+            y:direction === 'up' ? 80 : direction === 'down'? -80 : 0,
             opacity: 0,
-            x:direction === 'left' ? 80 : direction === 'right' ? -80: 0,
-            trasition: {
+            x:direction === 'left' ? 80 : direction === 'right'? -80 : 0,
+            transition: {
                 type:'tween',
                 duration: 1.5,
                 delay: delay,
@@ -15,9 +15,9 @@ export const fadeIn = (direction, delay) => {
         },
         show: {
             y:0,
-            y:0,
+            x:0,
             opacity: 1,
-            trasition: {
+            transition: {
                 type:'tween',
                 duration: 1.5,
                 delay: delay,
