@@ -18,7 +18,7 @@ const recommendationData = [
     image: "/recommendation/hotel-1.png",
     location: "Shangai, China",
     desc: "Melhor Hotel da china para eventos particulares e fechado para empresas",
-    price: 40,
+    price: 430,
     testimonial: {
       message: "Melhor experiência que minha empresa já se hopesdou",
       personame: "Rober Kennedy",
@@ -29,7 +29,7 @@ const recommendationData = [
     image: "/recommendation/hotel-2.png",
     location: "Aspen, USA ",
     desc: "Melhor Hotel da china para eventos particulares e fechado para empresas",
-    price: 40,
+    price: 120,
     testimonial: {
       message: "Melhor experiência que minha empresa já se hopesdou",
       personame: "Filie Arthur",
@@ -67,12 +67,14 @@ const Recomendation = () => {
         whileInView={"show"}
         viewport={{ once: false, amount: 0 }}
       >
-        <Swiper modules={{Autoplay}} autoplay={{
+        <Swiper
+          modules={[ Autoplay ]}
+          autoplay={{
             delay: 4000,
-            disableOnInteraction: true,
-        }}
-        loop
-        speed={2000}
+            disableOnInteraction: false,
+          }}
+          loop
+          speed={2000}
         >
           {recommendationData.map((hotel, index) => {
             return (
@@ -88,7 +90,7 @@ const Recomendation = () => {
                     <p className="mb-[60px]">{hotel.desc}</p>
                     <div className="flex items-center gap-[50px] mb-[50px]">
                       <Button variant="accent" className="px-[44px]">
-                        book now
+                        Agende agora
                       </Button>
                       <div className="text-black">
                         <span className="font-bold text-2xl">
@@ -113,7 +115,7 @@ const Recomendation = () => {
                     />
                     <div
                       className="bg-soft_green p-4 text-white text-center xl:text-left xl:max-w-[468px] 
-                  xl:min-h-[180px] xl:absolute xl:bottom-0 xl:translate-x-1/2 xl:rounded-xl xl:px-10 ]"
+                  xl:min-h-[180px] xl:absolute xl:bottom-0 xl:translate-x-1/2  xl:rounded-xl xl:px-10 ]"
                     >
                       <p className="mb-3 max-w-md mx-auto xl:max-w-none xl:mx-0 xl:mb-6">
                         {hotel.testimonial.message}
@@ -130,8 +132,13 @@ const Recomendation = () => {
           })}
         </Swiper>
       </motion.div>
-      <Image src={'/recommendation/pattern.svg'} width={240} height={240} alt=""/>
-
+      <Image
+        src={"/recommendation/pattern.svg"}
+        width={240}
+        height={240}
+        alt=""
+        className="hidden xl:flex absolute left-[135px] -bottom-[120px]"
+      />
     </motion.section>
   );
 };

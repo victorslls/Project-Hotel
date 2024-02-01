@@ -16,16 +16,16 @@ const Header = () => {
           <div className="flex items-center justify-between">
             {/**logo */}
             <Link href="/">
-              <h1 className="text-2xl font-bold text-white">
+              <h1 className="text-2xl font-bold text-black">
                 Hote<span className="text-orange">ly</span>
               </h1>
             </Link>
             {/**nav e btn */}
-            <div className="hidden xl:flex">
-              <div className="flex items-center gap-x-12">
+            <div className="hidden xl:flex  ">
+              <div className="flex items-center gap-x-12 ">
                 <Nav
-                  containerStyles="flex items-center justify-between"
-                  listStyles="flex  gap-x-12 text-black"
+                  containerStyles="flex items-center justify-between "
+                  listStyles="flex  gap-x-12 text-white"
                 />
                 <Button variant="outline" className="px-10 h-[48px]">
                     Login
